@@ -24,9 +24,12 @@
               <% }} %>
             </ul>
             <nav id="sub-nav">
-              <div id="search-form-wrap">
-                <%- search_form({text: __('index.search')}) %>
-              </div>
+              <% if (theme.rss){ %>
+                <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
+              <% } %>
+              <!-- <div id="search-form-wrap"> -->
+              <!--   <%- search_form({text: __('index.search')}) %> -->
+              <!-- </div> -->
             </nav>
           </div>
         </div>
